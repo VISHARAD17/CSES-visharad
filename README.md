@@ -1,4 +1,4 @@
-### CSES problem solutions
+## <p align = 'center'>CSES problem solutions</p>
 
 ---
 
