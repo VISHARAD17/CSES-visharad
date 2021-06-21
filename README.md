@@ -1,4 +1,4 @@
-## <p align = 'center'>CSES problem solutions</p>
+## <p align = 'center'>CSES Problem Solutions</p>
 
 ---
 
