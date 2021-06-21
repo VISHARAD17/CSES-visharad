@@ -1,4 +1,7 @@
-### CSES problem solution 
+### CSES problem solutions
+
+---
+
 #### Problems can be found [here](https://cses.fi/problemset/)
 
 Problems Solved so far :
