@@ -1,7 +1,5 @@
 ## <p align = 'center'>CSES Problem Solutions</p>
 
----
-
 #### Problems can be found [here](https://cses.fi/problemset/)
 
 Problems Solved so far :
