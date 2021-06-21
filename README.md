@@ -6,5 +6,5 @@ Problems Solved so far :
 --
 
 | Sr. No. | Problem | Problem statement | Solution |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | 1 | Coin Piles | [Here]() | [Here]() |
