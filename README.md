@@ -3,7 +3,7 @@
 
 Problems Solved so far :
 
---
+---
 
 | Sr. No. | Problem | Problem statement | Solution |
 | --- | --- | --- | --- |
