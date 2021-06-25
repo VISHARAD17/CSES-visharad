@@ -8,3 +8,4 @@
 | --- | --- | --- | --- |
 | 1 | Coin Piles | [Here](https://cses.fi/problemset/task/1754) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/coin_piles.cpp) |
 | 2 | Fibonacci | [Here](https://cses.fi/problemset/task/1722/) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/febonacci.cpp) |
+| 3 | Weird Algorithm | [Here](https://cses.fi/problemset/task/1068) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/weird_algo.cpp) |
