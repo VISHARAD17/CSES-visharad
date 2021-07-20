@@ -11,3 +11,4 @@
 | 3 | Weird Algorithm | [Here](https://cses.fi/problemset/task/1068) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/weird_algo.cpp) |
 | 4 | Missing Number | [Here](https://cses.fi/problemset/task/1083/) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/missing_num.cpp) |
 | 5 | Distinct Numbers | [Here](https://cses.fi/problemset/task/1621) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/distinct_num.cpp) |
+|6| Dice Combinations | [Here](https://cses.fi/problemset/task/1633) | [Here](https://github.com/VISHARAD17/CSES-visharad/blob/main/dice_combinations.cpp) |
