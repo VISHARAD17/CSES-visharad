@@ -1,16 +1,13 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    double n;
+int main()
+{
+    string n;
     cin >> n;
-    vector<double> a(n);
-    for(double i; i<n; i++){
-        cin >> a[i];
-    }
 
-    map<double, double> distinct_nums;
-    for (const double &item : a)
+    map<char, double> distinct_nums;
+    for (const char &item : n)
     {
         distinct_nums[item]++;
     }
@@ -27,5 +24,5 @@ int main(){
             continue;
         }
     }
-    cout << distinct_nums.size();
+    cout << max_count;
 }
