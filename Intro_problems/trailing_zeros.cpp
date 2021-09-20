@@ -2,6 +2,7 @@
 using namespace std;
 typedef long long ll;
 
+
 int main(){
     ll num, ans = 0;
     cin >> num;
