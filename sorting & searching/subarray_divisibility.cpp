@@ -31,7 +31,7 @@ int main()
 {
     int n;
     ll x;
-    cin >> n >> x;
+    cin >> n;
     ll ans = 0;
     ll sum = 0;
 
@@ -41,8 +41,8 @@ int main()
     for(int i=0; i<n; i++){
         int a;
         cin >> a;
-        sum += a;
-        ans += mp[sum-x];
+        sum = (sum + a%n +n)%n;
+        ans += mp[sum];
         mp[sum]++;
     }
     cout << ans;
