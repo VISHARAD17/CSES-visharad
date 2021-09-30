@@ -29,22 +29,29 @@ ll MOD = 998244353;
 
 int main()
 {
-    int n;
-    ll x;
-    cin >> n >> x;
-    ll ans = 0;
-    ll sum = 0;
+    string s1, s2;
+    cin >> s1 >> s2;
 
-    map<ll, int>mp;
-    mp[0]++;
-    
-    for(int i=0; i<n; i++){
-        int a;
-        cin >> a;
-        sum += a;
-        ans += mp[sum-x];
-        mp[sum]++;
+    int m = s1.size(), n = s2.size();
+    //cout << m << " " << n << endl;
+
+    vector<vector<int>>dp(m+1, vector<int>(n+1, INT_MAX));
+
+    for(int i=0; i<=m; i++)
+        dp[i][0] = i; // first column base case
+    for(int j=0; j<=n; j++)
+        dp[0][j] = j; // first row base case
+
+    for(int i=1; i<=m; i++){
+        for(int j=1; j<=n; j++){
+            if(s1[i-1] == s2[j-1]) dp[i][j] = dp[i-1][j-1];
+            else{
+                dp[i][j] = 1 + min({dp[i][j-1], dp[i-1][j], dp[i-1][j-1]});
+            }
+        }
     }
-    cout << ans;
+    cout << dp[m][n];
+    //print(dp);
+    // cout << s1 << " " << s2;
     return 0;
 }

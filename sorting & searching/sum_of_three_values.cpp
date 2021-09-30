@@ -26,25 +26,27 @@ typedef long long ll;
 typedef long double ld;
 ll MOD = 998244353;
 #define all(x) (x).begin(), (x).end()
-
-int main()
-{
-    int n;
-    ll x;
-    cin >> n >> x;
-    ll ans = 0;
-    ll sum = 0;
-
-    map<ll, int>mp;
-    mp[0]++;
-    
+ 
+int main(){
+    int n, x;
+    cin  >> n >> x;
+    vector<vector<int>>a(n, vector<int>(2));
     for(int i=0; i<n; i++){
-        int a;
-        cin >> a;
-        sum += a;
-        ans += mp[sum-x];
-        mp[sum]++;
+        cin >> a[i][0];
+        a[i][1] = i+1;
     }
-    cout << ans;
-    return 0;
+    // since we are sorting we need to keep track of indices of the original array
+    sort(a.begin(), a.end());
+
+    for(int i=0; i<n; i++){
+        int x2 = x - a[i][0];
+        for(int j=i+1, k = n-1; j<k; j++){
+            while(j<k && a[j][0]+a[k][0] > x2) k--;
+            if(j<k && a[j][0]+a[k][0] == x2){
+                cout << a[i][1] << " " << a[j][1] << " " << a[k][1];
+                return 0;
+            }
+        }
+    }
+    cout << "IMPOSSIBLE";
 }
