@@ -5,7 +5,7 @@
 ### Problems Solved so far :
 
 ### <p align = 'center'>Sorting & Searching</p>
-| No.| Problem | Statement | Solutio n|
+| No.| Problem | Statement | Solution|
 | --- | --- | --- | --- |
 |1| Weird Algorithm|[Here]()|[Here]()|
 |2| Missing Number|[Here]()|[Here]()|
