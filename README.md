@@ -36,3 +36,5 @@
 |5|Collecting Numbers|[Here]()|[Here]()|
 |6|Disctinct_Number|[Here]()|[Here]()|
 |7|Playlist |[Here]()|[Here]()|
+|8|Subarray Sum I|[Here]()|[Here]()|
+|9| Sum of Two values |[Here]()|[Here]()|
