@@ -33,4 +33,7 @@
 |2| Apartment|[Here]()|[Here]()|
 |3|Ferris Wheel|[Here]()|[Here]()|
 |4|Concert Tickets|[Here]()|[Here]()|
+|5|Collecting Numbers|[Here]()|[Here]()|
+|6|Disctinct_Number|[Here]()|[Here]()|
 ---
+=======
