@@ -20,4 +20,5 @@ int main()
     //subtracting all the input numbers
     //printing the remaining number
     cout << setprecision(0) << fixed << sum;
+    
 }

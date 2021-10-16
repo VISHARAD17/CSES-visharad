@@ -27,6 +27,14 @@ typedef long double ld;
 ll MOD = 998244353;
 #define all(x) (x).begin(), (x).end()
 
+int median(vector<int>arr){
+    int n = arr.size();
+    if(n%2 == 0){
+        return (arr[n/2+1] + arr[n/2])/2;
+    }
+    return arr[int(n/2)];
+}
+
 int main()
 {
     int n,k;
@@ -39,10 +47,15 @@ int main()
 
     for(int i=0; i<k; i++) w.push_back(a[i]);
     sort(w.begin(), w.end());
-    ans.push_back(midEle(w));
+    ans.push_back(median(w));
 
-    for(int i=0; i<n-k+1; i++){
-        w.
+    for(int i=k; i<n-k+1; i++){
+        w.pop_back();
+        w.push_back(a[k]);
+        for(int i=0; i<k; i++) w[i] = w[i+1];
+        w.pop_back();
+        
     }
 
+    void printNode
 }
