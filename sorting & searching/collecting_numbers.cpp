@@ -7,7 +7,7 @@ int main(){
 
     int n;
     cin >> n;
-    unordered_map<int, int> mp;
+    unordered_map<int, int> mp; // storing indices for the integers
     for(int i=1; i<=n; i++){
         int t;
         cin >> t;
@@ -15,9 +15,9 @@ int main(){
     }
     int c = 0;
     for(int i=2; i<=n; i++){
-        if(mp[i] < mp[i-1]) c++;
+        if(mp[i] < mp[i-1]) c++; /* if the previous integer has a index value 
+                                 less than current then there is a backword pass */
     }
-
     cout << c+1;
 
     return 0;
