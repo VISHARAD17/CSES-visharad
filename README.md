@@ -35,9 +35,4 @@
 |4|Concert Tickets|[Here]()|[Here]()|
 |5|Collecting Numbers|[Here]()|[Here]()|
 |6|Disctinct_Number|[Here]()|[Here]()|
-<<<<<<< HEAD
-|7| Stick Length |[Here]()|[Here]()|
----
-=======
----
->>>>>>> main
+|7|Playlist |[Here]()|[Here]()|
