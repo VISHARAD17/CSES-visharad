@@ -4,8 +4,8 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    set<int>s;
-    set<int>::iterator it;
+    multiset<int>s;
+    multiset<int>::iterator it;
     for(int i=0; i<n; i++){
         int a;
         cin >> a;
