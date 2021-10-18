@@ -1,7 +1,7 @@
 # <p align = 'center'>CSES Problems Solutions</p>
 
 ### Problems can be found  [Here](https://cses.fi/problemset/)
-
+### problem count : 47
 ### Problems Solved so far :
 
 ### <p align = 'center'>Sorting & Searching</p>
