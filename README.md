@@ -25,6 +25,7 @@
 |4| Removing Digits|[Here]()|[Here]()|
 |5| Coin combination I |[Here]()|[Here]()|
 |5| Coin combination II |[Here]()|[Here]()|
+|6| Books|[Here]()|[Here]()|
 ---
 ### <p align = 'center'>Sorting & Searching</p>
 | No.| Problem | Statement | Solution |
