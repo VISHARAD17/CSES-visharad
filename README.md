@@ -1,10 +1,10 @@
 # <p align = 'center'>CSES Problems Solutions</p>
 
 ### Problems can be found  [Here](https://cses.fi/problemset/)
-### Problem Count: 47 
+### Problem Count: 49
 ### Problems Solved so far :
 
-### <p align = 'center'>Sorting & Searching</p>
+### <p align = 'center'>Introduction Problems</p>
 | No.| Problem | Statement | Solution|
 | --- | --- | --- | --- |
 |1| Weird Algorithm|[Here]()|[Here]()|
@@ -15,6 +15,9 @@
 |6|Two sets|[Here]()|[Here]()|
 |7|Bit Strings|[Here]()|[Here]()|
 |8|Trailing Zeros|[Here]()|[Here]()|
+|9|Apple Division|[Here]()|[Here]()|
+|10| Creating Strings|[Here]()|[Here]()|
+|11| Grey Code|[Here]()|[Here]()|
 ---
 ### <p align = 'center'>Dynamic Programming</p>
 | No.| Problem | Statement | Solution |
@@ -26,6 +29,8 @@
 |5| Coin combination I |[Here]()|[Here]()|
 |5| Coin combination II |[Here]()|[Here]()|
 |6| Books|[Here]()|[Here]()|
+|7| Array Discription|[Here]()|[Here]()|
+|8| Edit Distance |[Here]()|[Here]()|
 ---
 ### <p align = 'center'>Sorting & Searching</p>
 | No.| Problem | Statement | Solution |
