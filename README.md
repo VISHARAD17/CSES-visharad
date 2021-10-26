@@ -18,6 +18,8 @@
 |9|Apple Division|[Here]()|[Here]()|
 |10| Creating Strings|[Here]()|[Here]()|
 |11| Grey Code|[Here]()|[Here]()|
+|12| Coin Piles |[Here]()|[Here]()|
+|13| Number Spiral|[Here]()|[Here]()|
 ---
 ### <p align = 'center'>Dynamic Programming</p>
 | No.| Problem | Statement | Solution |
@@ -27,10 +29,10 @@
 |3| minimum coins|[Here]()|[Here]()|
 |4| Removing Digits|[Here]()|[Here]()|
 |5| Coin combination I |[Here]()|[Here]()|
-|5| Coin combination II |[Here]()|[Here]()|
-|6| Books|[Here]()|[Here]()|
-|7| Array Discription|[Here]()|[Here]()|
-|8| Edit Distance |[Here]()|[Here]()|
+|6| Coin combination II |[Here]()|[Here]()|
+|7| Books|[Here]()|[Here]()|
+|8| Array Discription|[Here]()|[Here]()|
+|9| Edit Distance |[Here]()|[Here]()|
 ---
 ### <p align = 'center'>Sorting & Searching</p>
 | No.| Problem | Statement | Solution |
