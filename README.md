@@ -21,6 +21,7 @@
 |12| Coin Piles |[Here]()|[Here]()|
 |13| Number Spiral|[Here]()|[Here]()|
 ---
+
 ### <p align = 'center'>Dynamic Programming</p>
 | No.| Problem | Statement | Solution |
 | --- | --- | --- | --- |
@@ -34,6 +35,7 @@
 |8| Array Discription|[Here]()|[Here]()|
 |9| Edit Distance |[Here]()|[Here]()|
 ---
+
 ### <p align = 'center'>Sorting & Searching</p>
 | No.| Problem | Statement | Solution |
 | --- | --- | --- | --- |
