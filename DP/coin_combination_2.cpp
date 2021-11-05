@@ -10,7 +10,7 @@ int main(){
     vector<int> coins(n);
     dp[0] = 1; //base case
 
-    //input for couins array
+    //input for coins array
     for (int i = 0; i < n; i++){
         cin >> coins[i];
     }

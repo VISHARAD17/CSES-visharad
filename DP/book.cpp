@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-    
     //input
     int n, x;
     cin >> n >> x; // n -> no. of books

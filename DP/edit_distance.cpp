@@ -19,9 +19,8 @@
 #include <stack>
 #include <iomanip>
 #include <fstream>
- 
 using namespace std;
- 
+
 typedef long long ll;
 typedef long double ld;
 ll MOD = 998244353;
