@@ -2,10 +2,11 @@
 #include <assert.h>
 #include <iostream>
 #include <math.h>
-#include <regex>
+#include <queue>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <utility>
 #include <vector>
 using namespace std;
 
@@ -15,53 +16,107 @@ const ll MOD = 1e9 + 7;
 #define all(x) (x).begin(), (x).end()
 vector<string> str;
 
-void dfs(vector<string> a, vector<vector<bool>>&vis, int i, int j, char move,
-         string &ans) {
+bool is_valid(int i, int j, int n, int m, vector<string>a, vector<vector<bool>> vis){
+    if(i>=0 and i<n and j>=0 and j<m and a[i][j] != '#' and vis[i][j] == false) return true;
+    return false;
+}
+
+string backtrack(ll x, ll y, vector<vector<char>> step)
+
+{
+    string ans;
+    if (step[x][y] != 'X') {
+        char ch = step[x][y];
+        ans += ch;
+        // Move one cell up
+        if (ch == 'U')
+            backtrack(x + 1, y, step);
+        // Move one cell down
+        else if (ch == 'D')
+            backtrack(x - 1, y, step);
+        // Move one cell left
+        else if (ch == 'L')
+            backtrack(x, y + 1, step);
+        // Move one cell right
+        else if (ch == 'R')
+            backtrack(x, y - 1, step);
+    }
+    return ans;
+}
+void shortest_path(pair<int, int> start, pair<int, int> end, vector<string> a){
     const int n = a.size();
     const int m = a[0].size();
 
-    if(a[i][j] == 'B'){
-        ans += move;
-        str.push_back(ans);
-        return;
+    vector<vector<bool>> vis(n, vector<bool>(m, false));
+    vector<vector<char>> step(n, vector<char>(m, 'X'));
+
+    queue<pair<int, int>> q;
+    q.push(start);
+    string ans;
+    bool path_found = false;
+
+    while(!q.empty()){
+        pair<int, int> u = q.front();
+        int i = u.first;
+        int j = u.second;
+        q.pop();
+        vis[i][j] = true;
+
+        if(a[i][j] == 'B'){
+            path_found = true;
+            break;
+        }
+
+        // go to neighbours
+        // up
+        if(is_valid(i-1, j, n, m, a, vis)){
+            vis[i-1][j] = true;
+            step[i][j] = 'U';
+            q.push(make_pair(i-1, j));
+        }
+        // down
+        if(is_valid(i+1, j, n, m, a, vis)){
+            vis[i+1][j] = true;
+            step[i+1][j] = 'D';
+            q.push(make_pair(i+1, j));
+        }
+        // left
+        if(is_valid(i, j-1, n, m, a, vis)){
+            vis[i][j-1] = true;
+            step[i][j-1] = 'L';
+            q.push(make_pair(i, j-1));
+        }
+        if(is_valid(i, j+1, n, m, a, vis)){
+            vis[i][j+1] = true;
+            step[i][j+1] = 'R';
+            q.push(make_pair(i, j+1));
+        }
     }
-    if (vis[i][j]) return; // if already visited then go back
-    if (a[i][j] == '#') return; // if hit wall then go back
 
-    vis[i][j] = true;
-    ans += move;
-
-    // go up, down, left, right for dfs
-    if (i - 1 >= 0) dfs(a, vis, i - 1, j, 'U', ans); // up
-    if (i + 1 < n) dfs(a, vis, i + 1, j, 'D', ans); // down
-    if (j + 1 < m) dfs(a, vis, i, j + 1, 'R', ans); // right
-    if (j - 1 >= 0) dfs(a, vis, i, j - 1, 'L', ans); // left
+    if(path_found){
+        ans = backtrack(start.first, start.second, step);
+        reverse(ans.begin(), ans.end());
+        cout << "YES\n" << ans.size() << "\n" << ans << "\n";
+    }
+    else cout << "NO\n";
 }
 
 void solve() {
-  // code
-  int n, m;
-  cin >> n >> m;
-  vector<string> a(n);
-  for (auto &x : a)
-    cin >> x;
-  string ans;
+    // code
+    int n, m;
+    cin >> n >> m;
+    vector<string> a(n);
+    for(auto &x: a) cin >> x;
+    
+    pair<int, int> start, end;
 
-  vector<vector<bool>> vis(n, vector<bool>(m, false));
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
-      if (a[i][j] == 'A') {
-        dfs(a, vis, i, j, '*', ans);
-      }
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(a[i][j] == 'A') start = make_pair(i,j);
+            else if(a[i][j] == 'B') end = make_pair(i, j);
+        }
     }
-  }
-  for (auto &x : vis) {
-    for (auto y : x) cout << y << " ";
-    cout << "\n";
-  }
-
-  for (auto &x : str)
-    cout << x << "\n";
+    shortest_path(start, end, a);
 }
 
 int main() {
