@@ -48,7 +48,8 @@ void shortest_path(pair<int, int> start, pair<int, int> end, vector<string> a){
     const int m = a[0].size();
 
     vector<vector<bool>> vis(n, vector<bool>(m, false));
-    vector<vector<char>> step(n, vector<char>(m, 'X'));
+    vector<vector<char>> step(n, vector<char>(m));
+    step[start.first][start.second] = 'X';
 
     queue<pair<int, int>> q;
     q.push(start);
@@ -116,6 +117,9 @@ void solve() {
             else if(a[i][j] == 'B') end = make_pair(i, j);
         }
     }
+    cout << "start " << start.first << " " << start.second;
+    cout << "\n";
+    cout << "start " << end.first << " " << end.second;
     shortest_path(start, end, a);
 }
 
