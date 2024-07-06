@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 typedef long long ll;
 #define mod 1000000007;
