@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+#define MOD 1000000007
 
 int main()
 {
@@ -15,7 +16,7 @@ int main()
 
     for(double i=0; i<n-1; i++){
         int num = 0;
-        num = (previos % 1000000007 + current % 1000000007);
+        num = (previos % MOD + current % MOD);
         previos = current;
         current = num;
     }
