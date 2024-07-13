@@ -11,15 +11,15 @@ int main()
         cout << n;
     }
     else{
-        int previos = 0;
-        int current = 1;
+        int prev = 0;
+        int cur = 1;
 
     for(double i=0; i<n-1; i++){
         int num = 0;
-        num = (previos % MOD + current % MOD);
-        previos = current;
-        current = num;
+        num = (prev % MOD + cur % MOD);
+        prev = cur;
+        cur = num;
     }
-    cout << current;
+    cout << cur;
     }
 }

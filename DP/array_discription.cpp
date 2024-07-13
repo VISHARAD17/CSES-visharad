@@ -18,7 +18,7 @@ int main(){
             dp[0][i] = 1;
         }
     }
-    //iterate through each layer
+    // iterate through each layer
     for(int i=1; i<n; i++){
         //two conditions are possible either element is zero or a number is given
         // if the element is zero
