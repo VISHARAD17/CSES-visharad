@@ -14,13 +14,13 @@ const ll MOD = 1e9+7;
 
 void solve(){
     //code
-    int n, k;
+    ll n, k;
     cin >> n >> k;
-    vector<int>a(n);
+    vector<ll>a(n);
     for(auto &x: a) cin >> x;
     
-    int left = 0, right = 0, distinct_count = 0, result = 0;
-    unordered_map<int, int> frq;
+    ll  left = 0, right = 0, distinct_count = 0, result = 0;
+    unordered_map<ll, ll> frq;
 
     while(right < n){
         if(frq.find(a[right]) == frq.end() or frq[a[right]] == 0) distinct_count++;
