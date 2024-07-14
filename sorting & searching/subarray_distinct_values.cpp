@@ -24,7 +24,7 @@ void solve(){
 
     while(right < n){
         if(frq.find(a[right]) == frq.end() or frq[a[right]] == 0) distinct_count++;
-        frq[right]++;
+        frq[a[right]]++;
         while(distinct_count > k){
             frq[a[left]]--;
             if(frq[a[left]] == 0) distinct_count--;
